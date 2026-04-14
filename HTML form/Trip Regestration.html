@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regestration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <form action="#" method="post">
+
+        <h1>Prepare your next trip with me...</h1>
+        
+        <p>Please take a moment to get in touch, I'll get back to you shortly</p>
+
+        <div class="column">
+
+            <div>
+                <label for="name" >Full Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div>
+                <label for="the-email" >Email address</label>
+                <input type="email" name="email" id="email" required placeholder="Enter a valid Email" value="xyz@Example.com">
+            </div>
+
+            <div>
+                <label for="the-phone" >phone number</label>
+                <input type="tel" name="phone" id="the-phone" placeholder="01*********">
+            </div>
+            
+            <div>
+                <label>Gender</label>
+                <input type="radio" name="gender" id="male" value="Male">
+            
+                <label class="inline-lapel" for="male">Male</label>
+            
+            </div>
+
+            <div>
+
+                <input type="radio" name="gender" id="female" value="Female">
+            
+                <label class="inline-lapel" for="female">Female</label>
+            
+            </div>
+        
+        </div>
+
+            <div>
+                <label for="date" >Arriving Date</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+
+            <div>
+                <label for="date" >Departurt Date</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+   
+            <div>
+              <label for="personal-card">Personal Card</label>
+               <input type="file" name="personal-card" id="personal-card" required>
+            </div>
+
+            <div>
+                <label for="file">Passport</label>
+                <input type="file" name="file" id="file">
+            </div>
+
+
+
+        <div>
+            <label for="cities">Where would you like to travel ?</label>
+            <select name="cities" id="cities">
+                <option value="">Choose one</option>
+                <option value="Cairo">Cairo</option>
+                <option value="Alexandria">Alexandria</option>
+                <option value="Luxor">Luxor</option>
+                <option value="Aswan">Aswan</option>
+                <option value="Ismailia">Ismailia</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="">Please check on the services that you need</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="Airline-Tickets" id="Airline-Tickets">
+            <label for="Airline-Tickets" class="inline-label">Airline Tickets</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="Rental-Car" id="Rental-Car">
+            <label for="Rental-Car" class="inline-label">Rental Car</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="Hotel-Accomodations" id="Hotel-Accomodations">
+            <label for="Hotel-Accomodations" class="inline-label">Hotel Accomodations</label>
+        </div>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+
+</body>
+
+</html>
